@@ -1,0 +1,549 @@
+Lab 1
+ 
+
+Q1'''· Write a Python program to access elements at different index positions.'''
+
+ 
+
+# Creating a list
+
+my_list = [10, 20, 30, 40, 50, 60]
+
+ 
+
+ #positive indexing
+
+print("Element at index 0:", my_list[0])
+
+print("Element at index 2:", my_list[2])
+
+print("Element at index 4:", my_list[4])
+
+ 
+
+#negative indexing
+
+print("Element at index -1 (last element):", my_list[-1])
+
+print("Element at index -3:", my_list[-3])
+
+ 
+
+# Accessing multiple elements (slicing)
+
+print("Elements from index 1 to 4:", my_list[1:5])
+
+ 
+
+ 
+
+LAB 2
+ 
+
+Q2'''· Write a Python program to add elements to a list using insert() and append().'''
+
+ 
+
+# Creating an empty list
+
+my_list = []
+
+ 
+
+# Adding elements using append()
+
+my_list.append(10)
+
+my_list.append(20)
+
+my_list.append(30)
+
+ 
+
+print("After using append():", my_list)
+
+ 
+
+# Adding elements using insert()
+
+my_list.insert(1, 15)  
+
+my_list.insert(0, 5)    
+
+ 
+
+print("After using insert():", my_list)
+
+ 
+
+Q3'''· Write a Python program to remove elements from a list using pop() and remove().'''
+
+ 
+
+# Creating a list
+
+my_list = [10, 20, 30, 40, 50, 30]
+
+ 
+
+print("Original list:", my_list)
+
+ 
+
+# Using remove() - removes first matching value
+
+my_list.remove(30)
+
+print("After remove(30):", my_list)
+
+ 
+
+# Using pop() - removes element by index
+
+removed_element = my_list.pop(2)  # removes element at index 2
+
+ 
+
+print("After pop(2):", my_list)
+
+print("Removed element using pop():", removed_element)
+
+ 
+
+LAB 3
+ 
+
+Q4'''· Write a Python program to iterate over a list using a for loop.
+
+'''
+
+# Creating a list
+
+my_list = ["Apple", "Banana", "Mango", "Grapes"]
+
+ 
+
+# Iterating over the list using for loop
+
+print("Fruits in the list:")
+
+for item in my_list:
+
+    print(item)
+
+ 
+
+Q5''' Write a Python program to sort a list using both sort() and sorted().'''
+
+# Creating a list
+
+my_list = [40, 10, 30, 50, 20]
+
+ 
+
+print("Original list:", my_list)
+
+ 
+
+# Using sort()
+
+my_list.sort()
+
+print("After sort():", my_list)
+
+ 
+
+# Creating another list for sorted() example
+
+new_list = [70, 60, 90, 80, 100]
+
+ 
+
+print("\nNew list:", new_list)
+
+ 
+
+# Using sorted() - returns a new sorted list
+
+sorted_list = sorted(new_list)
+
+ 
+
+print("After sorted():", sorted_list)
+
+print("Original list remains unchanged:", new_list)
+
+ 
+
+LAB 4
+Q6'''· Write a Python program to create a tuple with multiple data types.'''
+
+# Creating a tuple with multiple data types
+
+my_tuple = (10, 20.5, "Python", True, 50, "AI")
+
+ 
+
+print("Tuple with multiple data types:")
+
+print(my_tuple)
+
+ 
+
+Q7'''· Write a Python program to concatenate two tuples.
+
+'''
+
+# Creating two tuples
+
+tuple1 = (10, 20, 30)
+
+tuple2 = (40, 50, 60)
+
+ 
+
+result = tuple1 + tuple2
+
+ 
+
+print("First tuple:", tuple1)
+
+print("Second tuple:", tuple2)
+
+print("Concatenated tuple:", result)
+
+ 
+
+LAB 5
+Q8'''· Write a Python program to access values between index 1 and 5 in a tuple.'''
+
+ 
+
+# Creating a tuple
+
+my_tuple = (10, 20, 30, 40, 50, 60, 70, 80)
+
+ 
+
+result = my_tuple[1:6]
+
+ 
+
+print("Original Tuple:", my_tuple)
+
+print("Values between index 1 and 5:", result)
+
+ 
+
+Q9'''· Write a Python program to access alternate values between index 1 and 5 in a tuple'''
+
+ 
+
+# Creating a tuple
+
+my_tuple = (10, 20, 30, 40, 50, 60, 70, 80)
+
+ 
+
+result = my_tuple[1:6:2]
+
+ 
+
+print("Original Tuple:", my_tuple)
+
+print("Alternate values between index 1 and 5:", result)
+
+ 
+
+LAB 6
+ 
+
+Q10'''· Write a Python program to create a dictionary with 6 key-value pairs'''
+
+ 
+
+# Creating a dictionary with 6 key-value pairs
+
+student = {
+
+    "name": "Rahul",
+
+    "age": 20,
+
+    "course": "BCA",
+
+    "city": "Ahmedabad",
+
+    "marks": 85,
+
+    "grade": "A"
+
+}
+
+ 
+
+print("Student Dictionary:")
+
+print(student)
+
+ 
+
+Q11'''· Write a Python program to access values using dictionary keys'''
+
+# Creating a dictionary
+
+student = {
+
+    "name": "Rahul",
+
+    "age": 20,
+
+    "course": "BCA",
+
+    "city": "Ahmedabad",
+
+    "marks": 85
+
+}
+
+ 
+
+print("Name:", student["name"])
+
+print("Age:", student["age"])
+
+print("Course:", student["course"])
+
+print("City:", student["city"])
+
+print("Marks:", student["marks"])
+
+ 
+
+LAB 7
+Q12'''· Write a Python program to update a value in a dictionary.'''
+
+# Creating a dictionary
+
+student = {
+
+    "name": "Rahul",
+
+    "age": 20,
+
+    "course": "BCA",
+
+    "marks": 75,
+
+    "city": "Ahmedabad"
+
+}
+
+ 
+
+print("Original Dictionary:")
+
+print(student)
+
+ 
+
+student["marks"] = 85
+
+student["city"] = "Surat"
+
+ 
+
+print("\nUpdated Dictionary:")
+
+print(student)
+
+ 
+
+Q13'''· Write a Python program to merge two lists into one dictionary using a loop'''
+
+ 
+
+# Creating two lists
+
+keys = ["name", "age", "city", "course"]
+
+values = ["Rahul", 20, "Ahmedabad", "BCA"]
+
+ 
+
+my_dict = {}
+
+ 
+
+for i in range(len(keys)):
+
+    my_dict[keys[i]] = values[i]
+
+ 
+
+print("Dictionary after merging lists:")
+
+print(my_dict)
+
+ 
+
+LAB 8
+Q14'''· Write a Python program to create a function that takes a string as input and prints it.'''
+
+# Defining a function
+
+def print_string(text):
+
+    print("You entered:", text)
+
+ 
+
+user_input = input("Enter a string: ")
+
+ 
+
+print_string(user_input)
+
+ 
+
+Q15'''· Write a Python program to create a calculator using functions.
+
+'''
+
+# Function for addition
+
+def add(a, b):
+
+    return a + b
+
+ 
+
+# Function for subtraction
+
+def subtract(a, b):
+
+    return a - b
+
+ 
+
+# Function for multiplication
+
+def multiply(a, b):
+
+    return a * b
+
+ 
+
+# Function for division
+
+def divide(a, b):
+
+    if b != 0:
+
+        return a / b
+
+    else:
+
+        return "Cannot divide by zero"
+
+ 
+
+num1 = float(input("Enter first number: "))
+
+num2 = float(input("Enter second number: "))
+
+ 
+
+print("\nSelect Operation:")
+
+print("1. Addition")
+
+print("2. Subtraction")
+
+print("3. Multiplication")
+
+print("4. Division")
+
+ 
+
+choice = input("Enter choice (1/2/3/4): ")
+
+ 
+
+if choice == '1':
+
+    print("Result:", add(num1, num2))
+
+elif choice == '2':
+
+    print("Result:", subtract(num1, num2))
+
+elif choice == '3':
+
+    print("Result:", multiply(num1, num2))
+
+elif choice == '4':
+
+    print("Result:", divide(num1, num2))
+
+else:
+
+    print("Invalid choice")
+
+ 
+
+LAB 9
+ 
+
+Q16''' Write a Python program to import the math module and use functions like sqrt(), ceil(),
+
+floor().'''
+
+# Import math module
+
+import math
+
+ 
+
+num = 25
+
+value = 7.8
+
+ 
+
+print("Square Root:", math.sqrt(num))
+
+print("Ceiling Value:", math.ceil(value))
+
+print("Floor Value:", math.floor(value))
+
+ 
+
+Q17'''· Write a Python program to generate random numbers using the random module.'''
+
+# Generate random numbers using random module
+
+ 
+
+import random
+
+ 
+
+print("Random Integer:", random.randint(1, 100))
+
+print("Random Float:", random.random())
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+ 
